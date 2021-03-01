@@ -246,7 +246,11 @@ int main_r(int argc, const char * argv[]) {
             devVals.deviceBoard = (char*)client.getDeviceBoardNoCopy();
             
             if (flags & FLAG_LATEST_SEP){
+<<<<<<< HEAD
                 info("user specified to use latest signed SEP (WARNING, THIS CAN CAUSE A NON-WORKING RESTORE)\n");
+=======
+                info("user specified to use latest signed SEP ((WARNING, THIS CAN CAUSE A NON-WORKING RESTORE)\n");
+>>>>>>> origin/v1
                 client.loadLatestSep();
             }else if (!client.is32bit()){
                 client.loadSep(sepPath);
